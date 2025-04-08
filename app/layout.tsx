@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Header } from './layout/header'
+import { Footer } from './layout/footer'
 
 export const metadata: Metadata = {
   title: 'Thiago Melo',
@@ -15,10 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`'bg-primary`}>
+    <html lang="en" className="bg-primary">
       <body>
         <Header />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )

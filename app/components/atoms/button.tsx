@@ -3,8 +3,10 @@ type ButtonProps = Omit<React.ComponentProps<'button'>, 'color'> & {
 }
 
 export const Button = ({ color = 'primary-btn', children }: ButtonProps) => {
+  const _color = `bg-${color}`
+
   return (
-    <button type="button" className={`bg-${color}`}>
+    <button type="button" className={`${_color} `}>
       {children}
     </button>
   )

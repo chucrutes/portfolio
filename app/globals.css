@@ -11,6 +11,7 @@
 :root {
 	margin: 0;
 	padding: 0;
+	color: var(--color-text);
 }
 
 .bg {
@@ -18,19 +19,24 @@
 }
 
 body {
-	padding: 0 4em 0 4em;
+	background-image: linear-gradient(to bottom, #162456, #141414);
+
 }
+
 
 header {
-	padding: 1em 0 1em 0;
+	padding: 1em .8em 1em .8em;
+	/* background-color: var(--color-primary); */
 }
 
-h1,
-h2,
-h3,
-p,
-button {
-	color: var(--color-text);
+footer {
+	padding: 1em .8em 1em .8em;
+	/* background-color: #141414; */
+}
+
+main {
+	/* background-image: linear-gradient(to bottom, #162456, #141414); */
+	height: 70vh;
 }
 
 button {
