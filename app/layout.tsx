@@ -1,13 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Nunito_Sans } from 'next/font/google'
 import { Header } from './layout/header'
-
-export const nunito = Nunito_Sans({
-  weight: '200',
-  subsets: ['latin'],
-  style: 'normal'
-})
 
 export const metadata: Metadata = {
   title: 'Thiago Melo',
@@ -22,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`'bg-primary ${nunito.className}`}>
+    <html lang="en" className={`'bg-primary`}>
       <body>
         <Header />
         {children}
