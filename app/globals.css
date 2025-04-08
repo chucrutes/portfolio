@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+	--color-primary: #162456;
+	--color-secondary: #343246;
+	--color-primary-btn: #093aeb;
+	--color-delete-btn: rgb(148, 30, 30);
+	--color-text: #ffffff;
+}
+
+:root {
+	margin: 0;
+	padding: 0;
+}
+
+.bg {
+	background-color: var(--color-primary);
+}
+
+body {
+	padding: 0 4em 0 4em;
+}
+
+header {
+	padding: 1em 0 1em 0;
+}
+
+h1,
+h2,
+h3,
+p,
+button {
+	color: var(--color-text);
+}
+
+button {
+	border-radius: 8rem;
+	padding: .2em 1.5em .2em 1.5em;
+	color: var(--text-color);
+	margin: 0 0.2em 0 .2em;
+}
