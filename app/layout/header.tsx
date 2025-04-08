@@ -19,7 +19,7 @@ export const Header = () => {
           <Linkedin />
         </a>
         <a
-          href="https://www.linkedin.com/in/thiagocmaraujo/"
+          href="https://github.com/chucrutes/"
           target="_blank"
           rel="noreferrer"
         >
