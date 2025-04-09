@@ -21,12 +21,12 @@ export const Header = () => {
       <div className="logo-container">
         <Image
           src={'/logo_without_background.png'}
-          alt="My logo"
+          alt="Sloth logo"
           width={100}
           height={52}
         />
       </div>
-      <div id="social-medias" className="flex items-center gap-2">
+      <div id="social-medias" className="flex items-center gap-4">
         <a
           href="https://www.linkedin.com/in/thiagocmaraujo/"
           target="_blank"
@@ -40,6 +40,12 @@ export const Header = () => {
           rel="noreferrer"
         >
           <Image src={'/github.png'} width={25} height={25} alt="Github icon" />
+        </a>
+        <a href="/resume.pdf" target="_blank" rel="noreferrer">
+          <Image src={'/resume.png'} width={25} height={25} alt="Resume" />
+        </a>
+        <a href="mailto:tmelo387@gmail.com">
+          <Image src={'/gmail.png'} width={25} height={25} alt="Gmail icon" />
         </a>
       </div>
     </header>

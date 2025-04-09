@@ -20,8 +20,8 @@ export const Card = ({ title, description }: CardProps) => {
       }}
     >
       <div className="w-full">
-        <h1 className="font-bold text-center">{title}</h1>
-        <div className="border-2 rounded-2xl w-full border-purple" />
+        <h1 className="font-bold text-center text-2xl">{title}</h1>
+        <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55" />
       </div>
       <div className="pt-4 px-2 text-justify">
         <p className="line-clamp-4">{description}</p>
