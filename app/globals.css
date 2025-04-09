@@ -8,40 +8,9 @@
 	--color-text: #ffffff;
 }
 
+
 :root {
 	margin: 0;
 	padding: 0;
 	color: var(--color-text);
-}
-
-.bg {
-	background-color: var(--color-primary);
-}
-
-body {
-	background-image: linear-gradient(to bottom, #162456, #141414);
-
-}
-
-
-header {
-	padding: 1em .8em 1em .8em;
-	/* background-color: var(--color-primary); */
-}
-
-footer {
-	padding: 1em .8em 1em .8em;
-	/* background-color: #141414; */
-}
-
-main {
-	/* background-image: linear-gradient(to bottom, #162456, #141414); */
-	height: 70vh;
-}
-
-button {
-	border-radius: 8rem;
-	padding: .2em 1.5em .2em 1.5em;
-	color: var(--text-color);
-	margin: 0 0.2em 0 .2em;
 }

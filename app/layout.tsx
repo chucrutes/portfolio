@@ -1,12 +1,28 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Header } from './layout/header'
 import { Footer } from './layout/footer'
+import { Header } from './layout/header'
 
 export const metadata: Metadata = {
   title: 'Thiago Melo',
   description:
-    'This is my portfolio, here I show some my experience and challenges during my journey as a software engineer',
+    'This is my portfolio, here I show my experience and challenges during my journey as a software engineer.',
+  keywords: [
+    'software',
+    'engineer',
+    'engineering',
+    'portfolio',
+    'aws',
+    'node',
+    'express',
+    'api',
+    'next',
+    'react',
+    'hexagonal',
+    'architecture',
+    'solid',
+    'dry'
+  ],
   icons: '/logo_without_background.png'
 }
 
@@ -16,11 +32,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-primary">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+    <html lang="en">
+      <body className="w-full h-screen">
+        <div className="h-full min-h-dvh grid grid-rows-[80px_1fr_80px] text-text">
+          <Header />
+          <main className="h-full bg-gradient-to-b from-primary to-[#141414]">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
