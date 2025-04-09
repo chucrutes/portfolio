@@ -1,5 +1,3 @@
 export const Footer = () => {
-  return (
-    <footer className="bg-blue-900 flex justify-center">working on it</footer>
-  )
+  return <footer className="bg-black flex justify-center">working on it</footer>
 }
