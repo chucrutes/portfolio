@@ -3,27 +3,13 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { Footer } from './layout/footer'
 import { Header } from './layout/header'
+import { keywords } from './config/keywords'
 
 export const metadata: Metadata = {
   title: 'Thiago Melo',
   description:
     'This is my portfolio, here I show my experience and challenges during my journey as a software engineer.',
-  keywords: [
-    'software',
-    'engineer',
-    'engineering',
-    'portfolio',
-    'aws',
-    'node',
-    'express',
-    'api',
-    'next',
-    'react',
-    'hexagonal',
-    'architecture',
-    'solid',
-    'dry'
-  ],
+  keywords,
   icons: '/logo_without_background.png'
 }
 
