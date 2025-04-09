@@ -41,7 +41,7 @@ export const Header = () => {
         >
           <Image src={'/github.png'} width={25} height={25} alt="Github icon" />
         </a>
-        <a href="/resume.pdf" target="_blank" rel="noreferrer">
+        <a href="/CV.pdf" target="_blank" rel="noreferrer">
           <Image src={'/resume.png'} width={25} height={25} alt="Resume" />
         </a>
         <a href="mailto:tmelo387@gmail.com">
