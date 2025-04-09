@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className="w-full h-screen">
         <div className="h-full min-h-dvh grid grid-rows-[80px_1fr_80px] text-text">
           <Header />
-          <main className="bg-gradient-to-b from-primary to-black">
+          <main className="bg-gradient-to-b from-primary to-black py-8">
             {children}
           </main>
           <Footer />

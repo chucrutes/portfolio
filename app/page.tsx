@@ -1,4 +1,4 @@
-import { Card } from './components/organisms/card'
+import { Card } from './components/organisms/card/card'
 
 export default function Home() {
   return (

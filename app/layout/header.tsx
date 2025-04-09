@@ -26,14 +26,6 @@ export const Header = () => {
           height={52}
         />
       </div>
-      <div className="logo-container">
-        <Image
-          src={'/round_profile.png'}
-          alt="My logo"
-          width={100}
-          height={52}
-        />
-      </div>
       <div id="social-medias" className="flex items-center gap-2">
         <a
           href="https://www.linkedin.com/in/thiagocmaraujo/"
