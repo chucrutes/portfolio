@@ -23,7 +23,7 @@ export default function Home() {
         />
         <Card
           title="Silver Bullet"
-          description="I've been contributing to Silver Bullet since 2021"
+          description="I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021I've been contributing to Silver Bullet since 2021"
         />
       </div>
     </div>
