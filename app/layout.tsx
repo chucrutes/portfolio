@@ -4,6 +4,8 @@ import { Roboto } from 'next/font/google'
 import { Footer } from './layout/footer'
 import { Header } from './layout/header'
 import { keywords } from './config/keywords'
+import { getLocale } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
 
 export const metadata: Metadata = {
   title: 'Thiago Melo',
@@ -15,20 +17,24 @@ export const metadata: Metadata = {
 
 const roboto = Roboto({ subsets: ['latin'] })
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const locale = await getLocale()
+
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang={locale} className={roboto.className}>
       <body className="w-full h-screen">
         <div className="h-full min-h-dvh grid grid-rows-[80px_1fr_60px] text-text">
-          <Header />
-          <main className="bg-gradient-to-b from-primary to-secondary pt-8">
-            {children}
-          </main>
-          <Footer />
+          <NextIntlClientProvider>
+            <Header />
+            <main className="bg-gradient-to-b from-primary to-secondary pt-8">
+              {children}
+            </main>
+            <Footer />
+          </NextIntlClientProvider>
         </div>
       </body>
     </html>
