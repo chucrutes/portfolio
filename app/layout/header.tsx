@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Linkedin } from '../assets/linkedin'
-import { LanguageSwitcherSelect } from '../components/atoms/lanugage-switcher-select'
+import { LanguageSwitcherSelect } from '../components/atoms/language-switcher-select'
 
 export const Header = () => {
   return (
