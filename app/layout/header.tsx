@@ -1,20 +1,6 @@
 import Image from 'next/image'
 import { Linkedin } from '../assets/linkedin'
-// header {
-// 	padding: 1.5em .8em;
-// 	background-color: #162456;
-// 	top: 0
-// }
-// header,
-// footer {
-// 	height: 15vh;
-// 	padding: 1em .8em;
-// 	position: fixed;
-// 	left: 0;
-// 	width: 100%;
-// 	z-index: 100;
 
-// }
 export const Header = () => {
   return (
     <header className="flex justify-between bg-primary items-center px-4">
