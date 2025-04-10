@@ -30,7 +30,7 @@ export default async function RootLayout({
         <div className="h-full min-h-dvh grid grid-rows-[80px_1fr_60px] text-text">
           <NextIntlClientProvider>
             <Header />
-            <main className="bg-gradient-to-b from-primary to-secondary pt-8">
+            <main className="bg-gradient-to-b from-primary to-secondary py-8">
               {children}
             </main>
             <Footer />
