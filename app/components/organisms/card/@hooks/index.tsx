@@ -1,7 +1,5 @@
 export const useCard = () => {
-  const onClick = () => {
-    console.log('action')
-  }
+  const onClick = () => {}
 
   return {
     onClick
