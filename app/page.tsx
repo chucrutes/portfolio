@@ -16,7 +16,6 @@ export default function Home() {
           title="Silver Bullet"
           description="I've been contributing to Silver Bullet since 2021"
           onClick={() => router.push('/experiences/teste')}
-          // onClick={() => console.log('clicked')}
         />
       </div>
     </div>
