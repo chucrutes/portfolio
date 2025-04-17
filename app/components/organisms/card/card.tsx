@@ -1,23 +1,20 @@
 'use client'
 
-import { useCard } from './@hooks'
+import type { MouseEventHandler } from 'react'
 
 type CardProps = {
   title: string
   description: string
+  onClick: MouseEventHandler<HTMLButtonElement>
 }
 
-export const Card = ({ title, description }: CardProps) => {
-  const { onClick } = useCard()
-
+export const Card = ({ title, description, onClick }: CardProps) => {
   return (
     <button
       type="button"
       id="card"
       className="p-2 flex flex-col items-center border-2 rounded-2xl h-[200px] cursor-pointer"
-      onClick={() => {
-        onClick()
-      }}
+      onClick={onClick}
     >
       <div className="w-full">
         <h1 className="font-bold text-center text-2xl">{title}</h1>

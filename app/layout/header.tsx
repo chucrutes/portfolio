@@ -5,14 +5,16 @@ import { LanguageSwitcherSelect } from '../components/molecules/language-switche
 export const Header = () => {
   return (
     <header className="flex justify-between bg-primary items-center px-4">
-      <div className="logo-container">
-        <Image
-          src={'/logo_without_background.png'}
-          alt="Sloth logo"
-          width={100}
-          height={52}
-        />
-      </div>
+      <a href="/">
+        <div className="logo-container">
+          <Image
+            src={'/logo_without_background.png'}
+            alt="Sloth logo"
+            width={100}
+            height={52}
+          />
+        </div>
+      </a>
       <div className="flex items-center gap-16">
         <LanguageSwitcherSelect />
         <div id="social-medias" className="flex gap-4">
