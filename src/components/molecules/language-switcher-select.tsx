@@ -1,8 +1,8 @@
 'use client'
 
+import { LOCALES } from '@/src/config/envs'
+import { setUserLocale } from '@/src/services/locale'
 import Image from 'next/image'
-import { LOCALES } from '@/app/config/envs'
-import { setUserLocale } from '@/app/services/locale'
 import { useRef, useTransition } from 'react'
 
 type Props = {

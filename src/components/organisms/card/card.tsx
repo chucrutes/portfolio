@@ -1,6 +1,7 @@
 'use client'
 
 import type { MouseEventHandler } from 'react'
+import { H1 } from '../../atoms/h1'
 
 type CardProps = {
   title: string
@@ -17,7 +18,7 @@ export const Card = ({ title, description, onClick }: CardProps) => {
       onClick={onClick}
     >
       <div className="w-full">
-        <h1 className="font-bold text-center text-2xl">{title}</h1>
+        <H1 text={title} />
         <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55" />
       </div>
       <div className="pt-4 px-2 text-justify">

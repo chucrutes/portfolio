@@ -1,4 +1,4 @@
-import { H1 } from '@/app/components/atoms/h1'
+import { H1 } from '@/src/components/atoms/h1'
 
 export default async function Experience({
   params

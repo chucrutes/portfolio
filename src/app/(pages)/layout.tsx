@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { Footer } from './layout/footer'
 import { Header } from './layout/header'
-import { keywords } from './config/keywords'
+import { keywords } from '../../config/keywords'
 import { getLocale } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 

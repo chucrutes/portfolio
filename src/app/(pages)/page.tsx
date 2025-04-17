@@ -1,8 +1,9 @@
 'use client'
 
-import { Card } from './components/organisms/card/card'
+import { Card } from '../../components/organisms/card/card'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { H1 } from '@/src/components/atoms/h1'
 
 export default function Home() {
   const t = useTranslations('HomePage')
@@ -10,7 +11,7 @@ export default function Home() {
   const router = useRouter()
   return (
     <div className="flex flex-col items-center">
-      <h1 className="pb-2 text-2xl">{t('title')}</h1>
+      <H1 text={t('title')} />
       <div className="flex flex-wrap justify-center w-full px-4 mt-4 gap-8">
         <Card
           title="Silver Bullet"
