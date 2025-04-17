@@ -1,5 +1,9 @@
 {
 	"HomePage": {
 		"title": "Projects & experiences"
+	},
+	"silverbullet": {
+		"title": "Silver Bullet",
+		"description": "I've been working on Silver Bullet since 2021. Which later became my Bachelor's thesis. During my contribution at the project I've learned and improved in a lot of fundamentals for better maintainability, reusability. I had the opportunity to learn about SOLID principles, DRY, code abstraction through DDD and OOP and TDD to ensure everything worked as expected."
 	}
 }

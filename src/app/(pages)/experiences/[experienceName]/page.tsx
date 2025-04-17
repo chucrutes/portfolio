@@ -1,16 +1,23 @@
 import { H1 } from '@/src/components/atoms/h1'
+import { getTranslations } from 'next-intl/server'
 
 export default async function Experience({
   params
 }: { params: Promise<{ experienceName: string }> }) {
-  const { experienceName: _ } = await params
+  const { experienceName } = await params
+
+  const project = await getTranslations(experienceName)
 
   return (
-    <div className="grid grid-cols-[1fr_18em] gap-4">
-      <div className="flex justify-center p-4">Fucking awesome project</div>
+    <div className="grid grid-cols-2 justify-evenly gap-4">
+      <div className="flex flex-col p-4 items-center">
+        <H1 text={project('title')} />
+
+        <p className="max-w-96 text-justify">{project('description')}</p>
+      </div>
       <div
         id="sidebar"
-        className="flex flex-col items-center border-white rounded-2xl border-2 p"
+        className="flex flex-col items-center border-white rounded-2xl border-2 mr-4"
       >
         <H1 text="Top skills" />
 
