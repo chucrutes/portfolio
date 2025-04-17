@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import { Linkedin } from '../assets/linkedin'
 import { LanguageSwitcherSelect } from '../components/molecules/language-switcher-select'
+import { getLocale } from 'next-intl/server'
 
-export const Header = () => {
+export const Header = async () => {
+  const locale = await getLocale()
   return (
     <header className="flex justify-between bg-primary items-center px-4">
       <a href="/">
@@ -16,7 +18,7 @@ export const Header = () => {
         </div>
       </a>
       <div className="flex items-center gap-16">
-        <LanguageSwitcherSelect />
+        <LanguageSwitcherSelect chosenLanguage={locale} />
         <div id="social-medias" className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/thiagocmaraujo/"

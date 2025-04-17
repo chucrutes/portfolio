@@ -22,9 +22,9 @@ const languages = [
   }
 ]
 
-export const LanguageSwitcherSelect = (_props: Props) => {
+export const LanguageSwitcherSelect = ({ chosenLanguage }: Props) => {
   const [isPending, startTransition] = useTransition()
-  const lang = useRef('en')
+  const lang = useRef(chosenLanguage ?? 'en')
 
   const onChange = (language: string) => {
     lang.current = language
