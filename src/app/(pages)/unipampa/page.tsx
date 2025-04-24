@@ -1,12 +1,8 @@
 import { H1 } from '@/src/components/atoms/h1'
 import { getTranslations } from 'next-intl/server'
 
-export default async function Experience({
-  params
-}: { params: Promise<{ experienceName: string }> }) {
-  const { experienceName } = await params
-
-  const project = await getTranslations(experienceName)
+export default async function Unipampa() {
+  const project = await getTranslations('unipampa')
 
   return (
     <div className="grid grid-cols-2 justify-evenly gap-4">
