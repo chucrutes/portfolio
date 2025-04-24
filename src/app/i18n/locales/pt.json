@@ -13,5 +13,11 @@
 	"teasy": {
 		"title": "Teasy Solutions",
 		"description": "Na Teasy Solutions, minha primeira experiência profissional com quase três anos de atuação, explorei diversas tecnologias. Desenvolvi APIs Serverless na AWS e aprofundei meus conhecimentos em Docker. Estudei novas tecnologias como Meta API e Twilio API para novos projetos e apliquei minhas habilidades de resolução de problemas criando um aplicativo para terminais de pagamento integrado ao sistema Fiserv. Nesse período, tive meu primeiro contato com JavaScript, Dart e utilizei Java, além de trabalhar em projetos com WebSocket e bancos de dados relacionais e não relacionais."
+	},
+	"whoami": {
+		"position": "Desenvolvedor Backend",
+		"areas": "Áreas que desejo trabalhar algum dia: CTO e arquiteto de software.",
+		"logo-title": "Por que o logo da preguiça?",
+		"story": "Acredito que estabelecer um bom pipeline de desenvolvimento é fundamental para garantir a qualidade. Para mim, um bom processo é, a longo prazo, a melhor maneira de economizar tempo, focar em resolver problemas reais e ter a garantia de entregar um produto confiável e de alta qualidade. A logo é o início do que eu espero que um dia se torne minha própria empresa."
 	}
 }
