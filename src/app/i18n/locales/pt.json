@@ -1,5 +1,17 @@
 {
 	"HomePage": {
 		"title": "Projetos & experiências"
+	},
+	"silverbullet": {
+		"title": "Silver Bullet",
+		"description": "Tenho trabalhado na Silver Bullet desde 2021. O qual mais tarde se tornou minha tese de bacharelado. Durante minha contribuição ao projeto, aprendi e melhorei em muitos fundamentos para melhor manutenibilidade e reutilização. Tive a oportunidade de aprender sobre os princípios SOLID, DRY, abstração de código através de DDD e POO e TDD para facilitar futuras manutenções"
+	},
+	"unipampa": {
+		"title": "Bacharelado em Engenharia de Software",
+		"description": "Na graduação, pelo método PBL, aprendi todo o ciclo de vida do software. Meus principais interesses foram em modelagem de banco de dados, principalmente relacional, qualidade de software, testes, fronteiras e cobertura de teste, caixa branca e caixa preta segurança e arquiteturas. Através da metodologia PBL, aplicamos o aprendizado na prática: levantamos requisitos para ONG, debugamos códigos legados, desenvolvemos projetos em POO com JAVA. Conheci outras linguagens e paradigmas: C, Haskell, Python, Pascal, PHP, Ajax. Mantivemos um projeto de microsserviços, onde aprendemos sobre mensageria e escalabilidade. Desenvolvemos um produto para outra universidade, aprendendo gerenciamento de projetos (PMBOK) e atuei como PO para validação com a parte interessada. No segundo semestre, ingressei em um projeto de pesquisa com bolsa, a Silver Bullet, que posteriormente se tornou meu TCC, onde a ferramenta foi redesenhada."
+	},
+	"teasy": {
+		"title": "Teasy Solutions",
+		"description": "Na Teasy Solutions, minha primeira experiência profissional com quase três anos de atuação, explorei diversas tecnologias. Desenvolvi APIs Serverless na AWS e aprofundei meus conhecimentos em Docker. Estudei novas tecnologias como Meta API e Twilio API para novos projetos e apliquei minhas habilidades de resolução de problemas criando um aplicativo para terminais de pagamento integrado ao sistema Fiserv. Nesse período, tive meu primeiro contato com JavaScript, Dart e utilizei Java, além de trabalhar em projetos com WebSocket e bancos de dados relacionais e não relacionais."
 	}
 }

@@ -14,15 +14,15 @@ export const Card = ({ title, description, onClick }: CardProps) => {
     <button
       type="button"
       id="card"
-      className="p-2 flex flex-col items-center border-2 rounded-2xl h-[200px] cursor-pointer"
+      className="p-2 flex flex-col items-center border-2 rounded-2xl max-h-64 max-w-96 cursor-pointer"
       onClick={onClick}
     >
       <div className="w-full">
         <H1 text={title} />
         <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55" />
       </div>
-      <div className="pt-4 px-2 text-justify">
-        <p className="line-clamp-4">{description}</p>
+      <div className="pt-4 px-2">
+        <p className="line-clamp-6 text-justify">{description}</p>
       </div>
     </button>
   )

@@ -45,6 +45,13 @@ export const Header = async () => {
           <a href="mailto:tmelo387@gmail.com">
             <Image src={'/gmail.png'} width={25} height={25} alt="Gmail icon" />
           </a>
+          <a
+            href="https://github.com/chucrutes/leetcode"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image src={'/icon2.png'} width={25} height={25} alt="Gmail icon" />
+          </a>
         </div>
       </div>
     </header>

@@ -1,5 +1,17 @@
 {
 	"HomePage": {
 		"title": "Projects & experiences"
+	},
+	"silverbullet": {
+		"title": "Silver Bullet",
+		"description": "I've been working on Silver Bullet since 2021. Which later became my Bachelor's thesis. During my contribution at the project I've learned and improved in a lot of fundamentals for better maintainability, reusability. I had the opportunity to learn about SOLID principles, DRY, code abstraction through DDD and OOP and TDD to ensure everything worked as expected."
+	},
+	"unipampa": {
+		"title": "Bachelor's Degree in Software Engineering",
+		"description": "During my bachelor's degree, using the PBL approach, I learned the entire software development lifecycle. I became interested in database modeling, especially relational databases, software quality processes, security, and software architectures. Through PBL, we applied our learning by eliciting requirements for a non-profit organization, debugging legacy code, and developing projects using OOP with JAVA. I also learned about other paradigms: C, Haskell, Python, Pascal and PHP. I maintained a microservices project, during which we learned about messaging. We developed a product for another university, learning project management (PMBOK guidelines), and I acted as a PO to validate it. In the second semester, I joined a research project with a scholarship, Silver Bullet, which later became my bachelor's thesis."
+	},
+	"teasy": {
+		"title": "Teasy Solutions",
+		"description": "At Teasy Solutions, my first professional experience spanning almost three years, I explored various technologies. I developed Serverless APIs on AWS and deepened my knowledge of Docker. I studied new technologies like Meta API and Twilio API for upcoming projects and applied my problem-solving skills by creating a payment terminal application integrated with the Fiserv system. During this period, I had my first exposure to JavaScript and Dart, and also utilized Java, in addition to working on projects with WebSocket and relational and non-relational databases."
 	}
 }
