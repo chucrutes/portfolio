@@ -60,7 +60,7 @@ export default function Home() {
           <Card
             title={teasy('title')}
             description={teasy('description')}
-            onClick={() => router.push('/unipampa')}
+            onClick={() => router.push('/teasy')}
           />
         </div>
       </div>
