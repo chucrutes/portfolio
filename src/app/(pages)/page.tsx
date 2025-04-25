@@ -18,7 +18,7 @@ export default function Home() {
   const router = useRouter()
   return (
     <div className="px-4">
-      <div className="grid md:grid-cols-2 grid-cols-1">
+      <div className="grid md:grid-cols-2 grid-cols-1 items-center">
         <div className="flex justify-center items-center gap-3">
           <Image
             src={'/profile3.png'}
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="pt-4">
           <H1 text={whoami('logo-title')} />
           <div className="pt-4">
-            <P text={whoami('story')} />
+            <P text={whoami('story')} lineclamp={8} />
           </div>
         </div>
       </div>
