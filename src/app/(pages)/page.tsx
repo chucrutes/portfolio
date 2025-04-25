@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { H1 } from '@/src/components/atoms/h1'
 import Image from 'next/image'
+import { P } from '@/src/components/atoms/p'
+import { Icon } from '@/src/components/atoms/icon'
 
 export default function Home() {
   const t = useTranslations('HomePage')
@@ -26,28 +28,20 @@ export default function Home() {
           />
           <div className="flex flex-col items-center">
             <H1 text={whoami('position')} />
-            <div className="flex gap-4 pt-8">
-              <Image src={'/java.png'} width={25} height={25} alt="Java icon" />
-              <Image src={'/c.png'} width={25} height={25} alt="C icon" />
-              <Image
-                src={'/haskell.png'}
-                width={25}
-                height={25}
-                alt="Haskell icon"
-              />
-              <Image
-                src={'/typescript.png'}
-                width={25}
-                height={25}
-                alt="Typescript icon"
-              />
-              <Image src={'/php.png'} width={25} height={25} alt="Php icon" />
+            <div className="flex gap-2 pt-8">
+              <Icon src="/java.png" alt="Java icon" />
+              <Icon src="/c.png" alt="C icon" />
+              <Icon src="/haskell.png" alt="Haskell icon" />
+              <Icon src="/typescript.png" alt="Typescript icon" />
+              <Icon src="/php.png" alt="Php icon" />
             </div>
           </div>
         </div>
         <div className="pt-4">
           <H1 text={whoami('logo-title')} />
-          <p>{whoami('story')}</p>
+          <div className="pt-4">
+            <P text={whoami('story')} />
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center pt-8">

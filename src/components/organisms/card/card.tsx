@@ -2,6 +2,7 @@
 
 import type { MouseEventHandler } from 'react'
 import { H1 } from '../../atoms/h1'
+import { P } from '../../atoms/p'
 
 type CardProps = {
   title: string
@@ -14,15 +15,15 @@ export const Card = ({ title, description, onClick }: CardProps) => {
     <button
       type="button"
       id="card"
-      className="p-2 flex flex-col items-center border-2 rounded-2xl max-h-64 max-w-96 cursor-pointer"
+      className="p-2 flex flex-col items-center border-2 rounded-2xl max-h-96 max-w-96 cursor-pointer 2xl:max-h-[500px]"
       onClick={onClick}
     >
       <div className="w-full">
         <H1 text={title} />
-        <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55" />
+        <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55 mt-4" />
       </div>
       <div className="pt-4 px-2">
-        <p className="line-clamp-6 text-justify">{description}</p>
+        <P text={description} />
       </div>
     </button>
   )
