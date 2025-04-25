@@ -15,7 +15,7 @@ export const Card = ({ title, description, onClick }: CardProps) => {
     <button
       type="button"
       id="card"
-      className="p-2 flex flex-col items-center border-2 rounded-2xl max-h-96 max-w-96 cursor-pointer 2xl:max-h-[500px]"
+      className="p-2 flex flex-col items-center border-2 rounded-2xl max-h-128 max-w-96 cursor-pointer 2xl:max-h-[500px]"
       onClick={onClick}
     >
       <div className="w-full">
@@ -23,7 +23,7 @@ export const Card = ({ title, description, onClick }: CardProps) => {
         <div className="border-2 rounded-2xl w-full border-[#aa2cff] opacity-55 mt-4" />
       </div>
       <div className="pt-4 px-2">
-        <P text={description} />
+        <P text={description} lineclamp="line-clamp-4" />
       </div>
     </button>
   )

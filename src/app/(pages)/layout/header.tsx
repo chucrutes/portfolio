@@ -7,7 +7,7 @@ export const Header = async () => {
   return (
     <header className="flex justify-between items-center bg-primary px-4 w-full">
       <a href="/">
-        <div className="logo-container ml-8">
+        <div className="logo-container sm:ml-16 2xl:ml-16">
           <Icon
             src={'/logo_without_background.png'}
             alt="Sloth logo"

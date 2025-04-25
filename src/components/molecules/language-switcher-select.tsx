@@ -12,11 +12,13 @@ type Props = {
 const languages = [
   {
     key: LOCALES[0],
-    icon: <Icon src="/usa.png" alt="USA flag" />
+    icon: <Icon src="/usa.png" alt="USA flag" width={50} height={50} />
   },
   {
     key: LOCALES[1],
-    icon: <Icon src="/brazil.png" alt="Brazillian flag" />
+    icon: (
+      <Icon src="/brazil.png" alt="Brazillian flag" width={50} height={50} />
+    )
   }
 ]
 
@@ -33,10 +35,10 @@ export const LanguageSwitcherSelect = ({ chosenLanguage }: Props) => {
   }
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center justify-center">
       {languages.map((item, index) => {
         return (
-          <div key={`group-languages-${index}`} className="m-2">
+          <div key={`group-languages-${index}`} className="mr-4">
             <button
               type="button"
               disabled={isPending}

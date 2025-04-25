@@ -28,7 +28,7 @@ export default function Home() {
           />
           <div className="flex flex-col items-center">
             <H1 text={whoami('position')} />
-            <div className="flex gap-2 pt-8">
+            <div className="grid grid-cols-2 md:grid-rows-4 pt-8 gap-3.5">
               <Icon src="/java.png" alt="Java icon" />
               <Icon src="/c.png" alt="C icon" />
               <Icon src="/haskell.png" alt="Haskell icon" />
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="pt-4">
           <H1 text={whoami('logo-title')} />
           <div className="pt-4">
-            <P text={whoami('story')} lineclamp={8} />
+            <P text={whoami('story')} lineclamp={'none'} />
           </div>
         </div>
       </div>
