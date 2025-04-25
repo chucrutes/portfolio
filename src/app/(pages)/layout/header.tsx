@@ -6,7 +6,7 @@ import { LanguageSwitcherSelect } from '@/src/components/molecules/language-swit
 export const Header = async () => {
   const locale = await getLocale()
   return (
-    <header className="flex justify-between bg-primary items-center px-4">
+    <header className="flex justify-between bg-primary items-center px-4 fixed top-0 w-full h-20 z-10">
       <a href="/">
         <div className="logo-container">
           <Image
