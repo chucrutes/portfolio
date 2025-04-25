@@ -3,7 +3,7 @@ import { P } from '@/src/components/atoms/p'
 import { Skills } from '@/src/components/molecules/skills'
 import { getTranslations } from 'next-intl/server'
 
-export default async function Silverbullet() {
+export default async function Teasy() {
   const project = await getTranslations('teasy')
 
   return (
