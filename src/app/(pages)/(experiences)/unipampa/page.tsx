@@ -11,7 +11,7 @@ export default async function Unipampa() {
       <div className="flex flex-col p-4 items-center">
         <H1 text={project('title')} />
 
-        <P text={project('description')} />
+        <P text={project('description')} lineclamp={'none'} />
       </div>
       <Skills />
     </div>
