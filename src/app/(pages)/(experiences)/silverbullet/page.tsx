@@ -1,4 +1,5 @@
 import { H1 } from '@/src/components/atoms/h1'
+import { P } from '@/src/components/atoms/p'
 import { Skills } from '@/src/components/molecules/skills'
 import { getTranslations } from 'next-intl/server'
 
@@ -10,7 +11,7 @@ export default async function Silverbullet() {
       <div className="flex flex-col p-4 items-center">
         <H1 text={project('title')} />
 
-        <p className="max-w-96 text-justify">{project('description')}</p>
+        <P text={project('description')} />
       </div>
       <Skills />
     </div>

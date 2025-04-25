@@ -1,15 +1,14 @@
-import Image from 'next/image'
-import { Linkedin } from '../../../assets/linkedin'
 import { getLocale } from 'next-intl/server'
 import { LanguageSwitcherSelect } from '@/src/components/molecules/language-switcher-select'
+import { Icon } from '@/src/components/atoms/icon'
 
 export const Header = async () => {
   const locale = await getLocale()
   return (
-    <header className="flex justify-between bg-primary items-center px-4 fixed top-0 w-full h-20 z-10">
+    <header className="flex justify-between bg-primary items-center px-4 fixed top-0 w-full h-20 z-10 2xl:h-32">
       <a href="/">
         <div className="logo-container">
-          <Image
+          <Icon
             src={'/logo_without_background.png'}
             alt="Sloth logo"
             width={100}
@@ -25,32 +24,27 @@ export const Header = async () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Linkedin />
+            <Icon src="/linkedin.svg" alt="Linkedin icon" />
           </a>
           <a
             href="https://github.com/chucrutes/"
             target="_blank"
             rel="noreferrer"
           >
-            <Image
-              src={'/github.png'}
-              width={25}
-              height={25}
-              alt="Github icon"
-            />
+            <Icon src="/github.png" alt="Github icon" />
           </a>
           <a href="/CV.pdf" target="_blank" rel="noreferrer">
-            <Image src={'/resume.png'} width={25} height={25} alt="Resume" />
+            <Icon src="/resume.png" alt="Resume" />
           </a>
           <a href="mailto:tmelo387@gmail.com">
-            <Image src={'/gmail.png'} width={25} height={25} alt="Gmail icon" />
+            <Icon src="/gmail.png" alt="Gmail icon" />
           </a>
           <a
             href="https://github.com/chucrutes/leetcode"
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={'/icon2.png'} width={25} height={25} alt="Gmail icon" />
+            <Icon src="/icon2.png" alt="Leetcode icon" />
           </a>
         </div>
       </div>
