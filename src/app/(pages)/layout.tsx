@@ -27,10 +27,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={roboto.className}>
       <body className="w-full h-screen">
-        <div className="h-full min-h-dvh grid grid-rows-[80px_1fr_60px] text-text">
+        <div className="h-full min-h-dvh grid grid-rows-[1fr_60px] text-text">
           <NextIntlClientProvider>
             <Header />
-            <main className="bg-gradient-to-b from-primary to-secondary py-8">
+            <main className="bg-gradient-to-b from-primary to-secondary py-8 pt-20">
               {children}
             </main>
             <Footer />
