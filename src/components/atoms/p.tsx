@@ -5,7 +5,7 @@ type PProps = {
   lineclamp?: number
 }
 
-export const P = ({ text, lineclamp = 4 }: PProps) => {
+export const P = ({ text, lineclamp = 6 }: PProps) => {
   return (
     <p
       className={cn(

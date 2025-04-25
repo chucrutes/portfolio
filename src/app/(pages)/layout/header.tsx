@@ -5,9 +5,9 @@ import { Icon } from '@/src/components/atoms/icon'
 export const Header = async () => {
   const locale = await getLocale()
   return (
-    <header className="flex justify-between items-center bg-primary px-4 fixed top-0 z-10 w-full h-20 2xl:h-32">
+    <header className="flex justify-between items-center bg-primary px-4 w-full">
       <a href="/">
-        <div className="logo-container mx-4">
+        <div className="logo-container ml-8">
           <Icon
             src={'/logo_without_background.png'}
             alt="Sloth logo"

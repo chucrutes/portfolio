@@ -17,7 +17,7 @@ export default function Home() {
 
   const router = useRouter()
   return (
-    <div className="px-4">
+    <div className="px-4 py-4">
       <div className="grid md:grid-cols-2 grid-cols-1 items-center">
         <div className="flex justify-center items-center gap-3">
           <Image

@@ -1,9 +1,9 @@
 'use client'
 
-import { LOCALES } from '@/src/config/envs'
-import { setUserLocale } from '@/src/services/locale'
-import { useRef, useTransition } from 'react'
 import { Icon } from '../atoms/icon'
+import { LOCALES } from '@/src/config/envs'
+import { useRef, useTransition } from 'react'
+import { setUserLocale } from '@/src/services/locale'
 
 type Props = {
   chosenLanguage?: string
@@ -26,6 +26,7 @@ export const LanguageSwitcherSelect = ({ chosenLanguage }: Props) => {
 
   const onChange = (language: string) => {
     lang.current = language
+
     startTransition(() => {
       setUserLocale(language)
     })

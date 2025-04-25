@@ -7,14 +7,6 @@ type Props = {
   height?: number
 }
 
-export const Icon = ({ width, height, ...props }: Props) => {
-  return (
-    <Image
-      {...props}
-      alt="Linkedin icon"
-      width={width ?? 40}
-      height={height ?? 40}
-      objectFit="contain"
-    />
-  )
+export const Icon = ({ width = 40, height = 40, ...props }: Props) => {
+  return <Image {...props} alt="Linkedin icon" width={width} height={height} />
 }
