@@ -1,6 +1,6 @@
 'use client'
 
-import { Icon } from '../atoms/icon'
+import Image from 'next/image'
 import { LOCALES } from '@/src/config/envs'
 import { useRef, useTransition } from 'react'
 import { setUserLocale } from '@/src/services/locale'
@@ -12,13 +12,11 @@ type Props = {
 const languages = [
   {
     key: LOCALES[0],
-    icon: <Icon src="/usa.png" alt="USA flag" width={50} height={50} />
+    icon: <Image src="/usa.png" alt="USA flag" width={50} height={50} />
   },
   {
     key: LOCALES[1],
-    icon: (
-      <Icon src="/brazil.png" alt="Brazillian flag" width={50} height={50} />
-    )
+    icon: <Image src="/brazil.png" alt="USA flag" width={50} height={50} />
   }
 ]
 
