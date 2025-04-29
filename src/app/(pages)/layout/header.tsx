@@ -7,7 +7,7 @@ export const Header = async () => {
   return (
     <header className="flex justify-between items-center bg-primary px-4 w-full">
       <a href="/">
-        <div className="logo-container sm:ml-16 2xl:ml-16">
+        <div className="logo-container ml-4 md:ml-16">
           <Icon
             src={'/logo_without_background.png'}
             alt="Sloth logo"
@@ -16,9 +16,9 @@ export const Header = async () => {
           />
         </div>
       </a>
-      <div className="flex items-center gap-16">
+      <div className="flex items-center gap-4 md:gap-16">
         <LanguageSwitcherSelect chosenLanguage={locale} />
-        <div id="social-medias" className="flex gap-4">
+        <div id="social-medias" className="flex gap-2 md:gap-4">
           <a
             href="https://www.linkedin.com/in/thiagocmaraujo/"
             target="_blank"
