@@ -17,6 +17,12 @@ const languages = [
   {
     key: LOCALES[1],
     icon: <Image src="/brazil.png" alt="USA flag" width={40} height={40} />
+  },
+  {
+    key: LOCALES[2],
+    icon: (
+      <Image src="/thailand.png" alt="Thailand flag" width={40} height={40} />
+    )
   }
 ]
 
