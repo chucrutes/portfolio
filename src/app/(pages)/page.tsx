@@ -33,6 +33,7 @@ export default function Home() {
               <Icon src="/c.png" alt="C icon" />
               <Icon src="/haskell.png" alt="Haskell icon" />
               <Icon src="/typescript.png" alt="Typescript icon" />
+              <Icon src="/dart.png" alt="Dart icon" />
               <Icon src="/php.png" alt="Php icon" />
             </div>
           </div>

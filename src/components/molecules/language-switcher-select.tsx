@@ -36,7 +36,7 @@ export const LanguageSwitcherSelect = ({ chosenLanguage }: Props) => {
     <div className="flex items-center justify-center">
       {languages.map((item, index) => {
         return (
-          <div key={`group-languages-${index}`} className="mr-4">
+          <div key={`group-languages-${index}`}>
             <button
               type="button"
               disabled={isPending}
